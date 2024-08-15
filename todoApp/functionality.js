@@ -22,9 +22,11 @@ const inputhandler= function ()
 function createTask(newTask)
 {
     const div= document.createElement("div");
+    div.classList.add('div-setup');
     const li= document.createElement('li');
     const button= document.createElement('button');
     button.innerText="Delete";
+    button.classList.add("delete-btn");
 
     li.textContent=newTask;
     div.appendChild(li);

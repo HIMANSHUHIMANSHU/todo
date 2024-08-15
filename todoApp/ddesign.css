@@ -2,7 +2,21 @@ body{
     font-family: sans-serif;
 
 }
-
+@keyframes typing {
+    from { width: 0; }
+    to { width: 100%; }
+}
+@keyframes blink {
+    0% { border-color: transparent; }
+    100% { border-color: black; }
+}
+.input-style::placeholder {
+    display: inline-block;
+    white-space: nowrap; /* Prevent wrapping */
+    animation: typing 3s steps(30, end) infinite, blink 0.75s step-end infinite;
+    color: grey;
+    font-style: italic;
+}
 h2{
     text-align: center;
     /* color: blueviolet; */
@@ -14,15 +28,19 @@ h3{
 
 .todo{
     border-radius: 20px;
+    border-color: gray;
     background-color: rgb(80, 121, 121);
     width: 400px;
     height: 500px;
     margin: auto;
     border: 2px solid grey;
+    box-shadow:  10px 5px 7px rgba(0, 0, 0, 0.5);;
+
     
 }
 .input-style{
     background-color:rgb(126, 150, 150);
+    height: 30px;
     border-radius: 5px;
     border-color: grey;
     box-shadow: inset 0px 2px 5px rgba(0, 0, 0, 0.5);;
@@ -35,7 +53,7 @@ h3{
     
     /* border: 2px solid brown; */
     width: 300px;
-    height: 100px;
+    height: 50px;
     
 }
 .list{
@@ -45,4 +63,26 @@ h3{
     border: 2px solid grey;
     height: 300px;
     margin: auto;
+    border-radius: 10px;
+}
+.delete-btn{
+    background-color:rgb(80, 121, 121);
+    border-radius: 5px;
+    /* border-color: rgb(80, 121, 121); */
+    border:none;
+}
+.div-setup{
+    display: flex;
+    border-radius: 10px;
+    justify-content: space-between;
+    border: 2px solid;
+    border: 5px solid rgb(80, 121, 121);
+    margin-top: 10px;
+}
+.task-btn{
+    background-color: rgb(127, 171, 171);
+    border-radius: 10px;
+    height: 30px;
+    margin-left: 20px;
+    
 }
