@@ -61,7 +61,7 @@ h3{
     background-color: rgb(126, 150, 150);
     width: 300px;
     border: 2px solid grey;
-    height: 300px;
+    height: 300px; 
     margin: auto;
     border-radius: 10px;
 }

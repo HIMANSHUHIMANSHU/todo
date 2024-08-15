@@ -18,7 +18,7 @@ const inputhandler= function ()
     })
     
 }
-
+ 
 function createTask(newTask)
 {
     const div= document.createElement("div");
