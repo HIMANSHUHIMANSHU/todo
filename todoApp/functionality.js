@@ -13,7 +13,7 @@ const inputhandler= function ()
     const deleteBtn= newElem.children[1];
     deleteBtn.addEventListener('click', function () {
 
-        newElem.remove();
+        newElem.remove(); 
             
     })
     
