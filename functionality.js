@@ -6,7 +6,7 @@ const taskList= document.querySelector(".list");
 const inputhandler= function ()
 {
     const newTask= input.value;
-    if (newTask==0) {
+    if (newTask.length==0) {
         return; 
         
     }
