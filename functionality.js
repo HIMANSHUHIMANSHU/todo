@@ -6,6 +6,10 @@ const taskList= document.querySelector(".list");
 const inputhandler= function ()
 {
     const newTask= input.value;
+    if (newTask==0) {
+        return;
+        
+    }
     const newElem=createTask(newTask);
         // addtotask.innerText = taskname;
     taskList.appendChild(newElem);
@@ -14,7 +18,7 @@ const inputhandler= function ()
     deleteBtn.addEventListener('click', function () {
 
         newElem.remove();  
-            
+             
     })
     
 }
