@@ -7,7 +7,7 @@ const inputhandler= function ()
 {
     const newTask= input.value;
     if (newTask==0) {
-        return;
+        return; 
         
     }
     const newElem=createTask(newTask);
